@@ -1,0 +1,205 @@
+body {
+    background-color: lightblue;
+    
+}
+
+h1 {
+    text-align: center;
+    font-family: "Sofia", sans-serif; 
+    font-size: 60px;
+    opacity: 0.5;
+    }
+
+    .navbar {
+        overflow: hidden;
+        background-color: #333;
+        
+      }
+      
+      .navbar a {
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      .dropdown {
+        float: left;
+        overflow: hidden;
+      }
+      
+      .dropdown .dropbtn {
+        font-size: 16px;  
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+      }
+      
+      .navbar a:hover, .dropdown:hover .dropbtn {
+        background-color: lightblue;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        
+      }
+      
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        background-color: black;
+        padding: 10px;
+        opacity: 0.8;
+        box-shadow: 3px;
+      }
+      
+      .grid-item {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+      }
+
+      p {
+        font-size: 40px;
+        text-shadow: 30px;
+      }
+
+      
+       
+          form {
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 25px;
+          }
+          
+          fieldset {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+          }
+          
+          legend {
+            font-weight: bold;
+            padding: 5px;
+          }
+          
+          label {
+            display: block;
+            margin-bottom: 5px;
+          }
+          
+          input[type="text"],
+          input[type="email"],
+          input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+          }
+          
+          textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+          }
+          
+          input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+          }
+          
+          input[type="submit"]:hover {
+            background-color: #45A049;
+          }
+          
+        /* Mobile-first approach */
+.menu-toggle {
+  display: none; /* Initially hidden for larger viewports */
+  cursor: pointer;
+}
+
+.menu {
+  display: none; /* Initially hidden */
+}
+
+/* Hamburger Icon Styles */
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 5px auto;
+  transition: background-color 0.3s ease;
+}
+
+/* Media Query for larger viewports */
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+      display: block; /* Displayed for smaller viewports */
+  }
+
+  .menu {
+      display: flex;
+      flex-direction: column;
+      background-color: #f9f9f9;
+      padding: 20px;
+      position: absolute;
+      top: 70px;
+      right: 0;
+      width: 200px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .menu li {
+      margin-bottom: 10px;
+  }
+
+  .menu a {
+      text-decoration: none;
+      color: #333;
+  }
+}
+
+        
+
+
